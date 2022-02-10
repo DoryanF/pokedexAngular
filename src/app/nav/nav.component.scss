@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+}
+ul li{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: space-around;
+  font-size: large;
+}
+ul li a{
+  text-decoration: none;
+  color: #2a75bb;
+
+}
+li:hover{
+  text-decoration: underline #3c5aa6 2px;
+}
+ul{
+  background-color: #ffcb05;
+  height: 100%;
+}

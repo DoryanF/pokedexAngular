@@ -1,0 +1,17 @@
+<h2>Liste des Pokémon</h2>
+
+<img src="../../assets/images/pokemon.jpg" class="image">
+
+<div class="pokemon-grid">
+  <div class="box" *ngFor="let pokemon of lstStats">
+    <img [src]="pokemon.sprites.front_default" alt="Pokemon">
+    <h3>{{pokemon.name}} #{{pokemon.id}}</h3>
+    <p><b>Type:</b> {{pokemon.types[0].type.name}}</p>
+    <p><b>HP:</b> {{pokemon.stats[0].base_stat}}</p>
+    <p><b>ATK:</b> {{pokemon.stats[1].base_stat}}</p>
+    <p><b>DEF:</b> {{pokemon.stats[2].base_stat}}</p>
+    <p><b>ATK SPE:</b> {{pokemon.stats[3].base_stat}}</p>
+    <p><b>DEF SPE:</b> {{pokemon.stats[4].base_stat}}</p>
+    <p><b>VIT:</b> {{pokemon.stats[5].base_stat}}</p>
+  </div>
+</div>
